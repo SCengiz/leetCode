@@ -17,7 +17,7 @@ def returnLongestCommonPrefix(inputArray):
                 count += 1
             if count == len(inputArray):
                 resultIndexCount += 1
-        if count == 0 or count < 3:
+        if count == 0 or count < len(inputArray[0]):
             break
         count = 0
     return findString(inputArray, resultIndexCount)
